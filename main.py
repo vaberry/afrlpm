@@ -8,7 +8,7 @@ import base64
 
 # Set page configuration
 st.set_page_config(
-    page_title="Pryon Text2SQL",
+    page_title="AFRL Portfolio Management",
     page_icon=":old_key:",
 )
 
