@@ -5,5 +5,4 @@
 .pycache/
 uploaded_files/
 test/
-*.db
 .streamlit/
