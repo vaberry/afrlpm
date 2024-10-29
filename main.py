@@ -16,10 +16,10 @@ st.set_page_config(
 st.markdown(
     """
     <div style="display: flex; justify-content: center;">
-        <img src="data:image/png;base64,{encoded_image}" width="200">
+        <img src="data:image/png;base64,{encoded_image}" width="500">
     </div>
     """.format(
-        encoded_image=base64.b64encode(open("./pryon.png", "rb").read()).decode()
+        encoded_image=base64.b64encode(open("./afrl.png", "rb").read()).decode()
     ),
     unsafe_allow_html=True
 )
@@ -68,7 +68,14 @@ def display_query_result(query_input, db_name):
 def main():
     global engine
 
-    st.title("Pryon Text2SQL")
+    st.markdown(
+        """
+        <div style="display: flex; justify-content: center;">
+            <h1>AFRL Portfolio Management</h1>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
     uploaded_files = st.file_uploader(
         "Upload a file or multiple files from a directory",
