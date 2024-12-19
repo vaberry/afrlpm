@@ -8,7 +8,7 @@ import base64
 
 # Set page configuration
 st.set_page_config(
-    page_title="AFRL Portfolio Management",
+    page_title="AFRL Portfolio Management tool",
     page_icon=":old_key:",
 )
 
@@ -19,7 +19,7 @@ st.markdown(
         <img src="data:image/png;base64,{encoded_image}" width="500">
     </div>
     """.format(
-        encoded_image=base64.b64encode(open("./afrl.png", "rb").read()).decode()
+        encoded_image=base64.b64encode(open("./afrl_new.png", "rb").read()).decode()
     ),
     unsafe_allow_html=True
 )
